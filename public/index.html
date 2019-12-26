@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>蓮溢堂</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <ul class="pages">
+    <li class="character page">
+      <div id="app"></div>
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <div class="divMessage">
+        <input class="inputMessage" placeholder="Type here..." />
+        <div class="enter">Enter</div>
+      </div>
+
+
+    </li>
+    <li class="login page">
+      <div class="logo">
+        <div class="h1">夢想世界</div>
+        <img src="img/Moonshine.png" alt="">
+        <div class="eng">ONLINE</div>
+      </div>
+      <div class="section">
+        <div class="h3">好吧，勇者，請輸入你的手機號碼確認身分，然後取一個名紫吧，還有記得選一個職業。</div>
+        <div class="checkAccount">
+          <input type="tel" name="phone" class="phone" placeholder="請輸入pmb上的手機號碼" autocomplete="off">
+          <div class="trueName"></div>
+        </div>
+
+        <input type="text" name="name" class="username" value="未命名使用者" maxlength="14">
+        <select name="job" id="jobSelect">
+          <option value="0">特效師</option>
+          <option value='1'>合成師</option>
+          <option value="2">PM</option>
+          <option value="3">動畫師</option>
+          <option value="4">美術師</option>
+          <option value="5">導演</option>
+          <option value="6">研發工程師</option>
+          <option value="7">行政</option>
+          <option value="8">創辦人</option>
+          <option value="9">行銷人</option>
+          <option value="10">設計師</option>
+        </select>
+        <button id="generate">Click to Start</button>
+      </div>
+      <footer>
+        行銷組 製
+      </footer>
+
+    </li>
+
+  </ul>
+
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
